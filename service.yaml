@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: onetier-service
+  namespace: prod   # 👈 Added namespace
+  labels:
+    app: onetier-label
+spec:
+  type: ClusterIP
+  selector:
+    app: onetier-label
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
