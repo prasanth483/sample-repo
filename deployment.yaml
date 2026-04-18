@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: onetier-deployment
+  namespace: prod
+  labels:
+    app: onetier-label
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: onetier-label
+  template:
+    metadata:
+      labels:
+        app: onetier-label
+    spec:
+      containers:
+      - name: onetier-container
+        image: prasanth3456/proposal-image
+        ports:
+        - containerPort: 80
