@@ -6,7 +6,7 @@ metadata:
   labels:
     app: onetier-label
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: onetier-label
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: onetier-container
-        image: nginx:latest
+        image: prasanth3456/proposal-image
         ports:
         - containerPort: 80
