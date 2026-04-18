@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: onetier-container
-        image: prasanth3456/jenkins-image
+        image: prasanth3456/proposal-image
         ports:
         - containerPort: 80
