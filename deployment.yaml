@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: onetier-container
-        image: prasanth3456/proposal-image
+        image: prasanth3456/sample-image:4
         ports:
         - containerPort: 80
